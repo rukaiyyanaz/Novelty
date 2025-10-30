@@ -1,0 +1,1024 @@
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    header {
+      width: 100%;
+      background: #ffffff;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar {
+      max-width: 1200px;
+      margin: auto;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo img {
+      height: 45px;
+      width: 45px;
+      border-radius: 50%;
+    }
+
+    .logo h1 {
+      font-size: 1.4rem;
+      color: #333;
+      font-weight: 600;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #c59d5f; /* gold accent */
+    }
+
+    .contact-btn {
+      background: #c59d5f;
+      color: #fff;
+      padding: 10px 18px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .contact-btn:hover {
+      background: #b68d50;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      nav ul {
+        display: none;
+      }
+      .menu-toggle {
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      color: #333;
+      background-color: #fff;
+    }
+
+    /* ---------- HEADER ---------- */
+    header {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.95);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      backdrop-filter: blur(10px);
+    }
+
+    .navbar {
+      max-width: 1200px;
+      margin: auto;
+      padding: 15px 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo h1 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #c59d5f;
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #c59d5f;
+    }
+
+    /* ---------- SECTIONS ---------- */
+    section {
+      padding: 100px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* ---------- HERO SECTION ---------- */
+    #home {
+      background: url('https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=1400&q=80') no-repeat center center/cover;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+
+    #home::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    #home h2 {
+      font-size: 2.5rem;
+      z-index: 1;
+    }
+
+    #home p {
+      font-size: 1.2rem;
+      z-index: 1;
+      margin-top: 15px;
+      max-width: 600px;
+    }
+
+    /* ---------- PRODUCTS SECTION ---------- */
+    #products {
+      text-align: center;
+    }
+
+    #products h2 {
+      color: #c59d5f;
+      margin-bottom: 20px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .product-card {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .product-card h3 {
+      padding: 15px;
+      color: #333;
+    }
+
+   /* ---------- ABOUT US ---------- */
+#about {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 120px 30px 80px; /* extra top padding for sticky header space */
+  margin-top: 60px;
+  text-align: center;
+  scroll-margin-top: 100px; /* prevents header overlap when scrolled to */
+}
+
+#about h2 {
+  color: #c59d5f;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+#about p {
+  max-width: 850px;
+  margin: 0 auto;
+  line-height: 1.8;
+  color: #444;
+  font-size: 1rem;
+}
+
+
+    /* ---------- GALLERY ---------- */
+    #gallery {
+      text-align: center;
+    }
+
+    #gallery h2 {
+      color: #c59d5f;
+      margin-bottom: 25px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.4s ease;
+    }
+
+    .gallery-grid img:hover {
+      transform: scale(1.05);
+    }
+
+    /* ---------- CONTACT ---------- */
+    #contact {
+      text-align: center;
+      background-color: #fff8f0;
+      border-radius: 10px;
+    }
+
+    #contact h2 {
+      color: #c59d5f;
+      margin-bottom: 10px;
+    }
+
+    #contact p {
+      font-size: 1rem;
+      margin-top: 10px;
+      line-height: 1.6;
+    }
+
+    .contact-btn {
+      background: #c59d5f;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      margin-top: 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .contact-btn:hover {
+      background: #b58a4d;
+    }
+
+    /* ---------- SPACING FOR FIXED HEADER ---------- */
+    #home, #products, #about, #gallery, #contact {
+      scroll-margin-top: 90px;
+    }
+  /* ---------- FOOTER ---------- */
+  footer {
+    background: #222;
+    color: #ddd;
+    padding: 60px 20px 20px;
+    margin-top: 50px;
+  }
+
+  .footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+  }
+
+  .footer-about h2 {
+    color: #c59d5f;
+    margin-bottom: 10px;
+  }
+
+  .footer-about p {
+    line-height: 1.7;
+    font-size: 0.95rem;
+  }
+
+  .footer-links h3, .footer-contact h3 {
+    color: #c59d5f;
+    margin-bottom: 15px;
+  }
+
+  .footer-links ul {
+    list-style: none;
+  }
+
+  .footer-links ul li {
+    margin: 8px 0;
+  }
+
+  .footer-links ul li a {
+    text-decoration: none;
+    color: #ccc;
+    transition: 0.3s;
+  }
+
+  .footer-links ul li a:hover {
+    color: #c59d5f;
+  }
+
+  .footer-contact p {
+    font-size: 0.95rem;
+    margin-bottom: 5px;
+  }
+
+ /* ---------- SOCIAL ICONS (VISIBLE COLOR VERSION) ---------- */
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.social-icons a:hover {
+  transform: scale(1.15);
+  box-shadow: 0 4px 12px rgba(197, 157, 95, 0.7);
+}
+
+.social-icons img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  filter: none; /* full-color visible */
+}
+
+
+  .footer-bottom {
+    text-align: center;
+    border-top: 1px solid #444;
+    margin-top: 40px;
+    padding-top: 15px;
+    font-size: 0.9rem;
+    color: #aaa;
+  }
+
+  /* ---------- BASE STYLES ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  color: #333;
+  background: #fff;
+}
+
+/* ---------- HEADER ---------- */
+header {
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.logo h1 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #c59d5f;
+  white-space: nowrap;
+}
+
+/* ---------- NAVIGATION ---------- */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #c59d5f;
+}
+
+.contact-btn {
+  background: #c59d5f;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.contact-btn:hover {
+  background: #b68b4f;
+}
+
+/* ---------- HERO SECTION ---------- */
+#home {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: url('https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=1400&q=80') no-repeat center/cover;
+  color: white;
+  padding: 0 20px;
+  position: relative;
+}
+
+#home::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#home h2,
+#home p {
+  z-index: 2;
+}
+
+#home h2 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+#home p {
+  font-size: 1.1rem;
+  max-width: 700px;
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  nav ul {
+    gap: 15px;
+  }
+
+  .logo h1 {
+    font-size: 1.1rem;
+  }
+
+  .contact-btn {
+    font-size: 0.9rem;
+    padding: 8px 14px;
+  }
+
+  #home h2 {
+    font-size: 1.8rem;
+  }
+
+  #home p {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    margin-top: 10px;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+    font-size: 1.6rem;
+    cursor: pointer;
+    color: #c59d5f;
+  }
+
+  .contact-btn {
+    margin-top: 10px;
+    align-self: flex-start;
+  }
+
+  #home h2 {
+    font-size: 1.6rem;
+  }
+
+  #home p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Very Small Devices */
+@media (max-width: 480px) {
+  .logo img {
+    height: 40px;
+    width: 40px;
+  }
+
+  .logo h1 {
+    font-size: 1rem;
+  }
+
+  #home h2 {
+    font-size: 1.4rem;
+  }
+
+  #home p {
+    font-size: 0.9rem;
+  }
+}
+
+/* ---------- PRODUCTS SECTION ---------- */
+#products {
+  text-align: center;
+  padding: 100px 20px;
+  background: #fff;
+}
+
+#products h2 {
+  color: #c59d5f;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+/* Product Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Product Card */
+.product-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.product-card:hover img {
+  transform: scale(1.05);
+}
+
+.product-card h3 {
+  font-size: 1.1rem;
+  color: #333;
+  margin: 15px 0 20px;
+  font-weight: 500;
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+
+/* Tablet */
+@media (max-width: 992px) {
+  #products h2 {
+    font-size: 1.8rem;
+  }
+
+  .product-card img {
+    height: 200px;
+  }
+
+  .product-card h3 {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  #products {
+    padding: 80px 15px;
+  }
+
+  .product-grid {
+    gap: 20px;
+  }
+
+  .product-card {
+    border-radius: 10px;
+  }
+
+  .product-card img {
+    height: 180px;
+  }
+
+  .product-card h3 {
+    font-size: 0.95rem;
+  }
+}
+
+/* Very Small Devices */
+@media (max-width: 480px) {
+  #products {
+    padding: 60px 10px;
+  }
+
+  #products h2 {
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+  }
+
+  .product-card img {
+    height: 160px;
+  }
+
+  .product-card h3 {
+    font-size: 0.9rem;
+  }
+}
+/* ---------- ABOUT US SECTION ---------- */
+#about {
+  background-color: #f9f9f9;
+  padding: 100px 20px;
+  border-radius: 10px;
+  max-width: 1200px;
+  margin: 80px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Left image box */
+#about::before {
+  content: "";
+  background: url('https://images.unsplash.com/photo-1616628182509-88be97c3c783?auto=format&fit=crop&w=1000&q=80')
+    no-repeat center/cover;
+  flex: 1 1 45%;
+  min-height: 350px;
+  border-radius: 12px;
+}
+
+/* Text content */
+#about h2 {
+  color: #c59d5f;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+#about p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.8;
+  max-width: 600px;
+  text-align: left;
+}
+
+/* Wrap the text in a container for proper flex behavior */
+#about-content {
+  flex: 1 1 50%;
+  padding: 20px;
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+
+/* Tablet */
+@media (max-width: 992px) {
+  #about {
+    flex-direction: column;
+    text-align: center;
+    padding: 80px 25px;
+  }
+
+  #about::before {
+    width: 100%;
+    min-height: 280px;
+  }
+
+  #about h2 {
+    text-align: center;
+    font-size: 1.8rem;
+  }
+
+  #about p {
+    text-align: center;
+    font-size: 1rem;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  #about {
+    padding: 60px 20px;
+  }
+
+  #about::before {
+    min-height: 220px;
+  }
+
+  #about h2 {
+    font-size: 1.6rem;
+  }
+
+  #about p {
+    font-size: 0.95rem;
+  }
+}
+
+/* ---------- GALLERY SECTION ---------- */
+#gallery {
+  background: #fff;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+#gallery h2 {
+  color: #c59d5f;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+/* Gallery Grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Gallery Image */
+.gallery-grid img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+
+/* Tablets */
+@media (max-width: 992px) {
+  #gallery {
+    padding: 80px 25px;
+  }
+
+  #gallery h2 {
+    font-size: 1.8rem;
+  }
+
+  .gallery-grid img {
+    height: 240px;
+  }
+}
+
+/* Mobiles */
+@media (max-width: 768px) {
+  #gallery {
+    padding: 70px 20px;
+  }
+
+  #gallery h2 {
+    font-size: 1.6rem;
+  }
+
+  .gallery-grid {
+    gap: 15px;
+  }
+
+  .gallery-grid img {
+    height: 200px;
+  }
+}
+
+/* Very Small Devices */
+@media (max-width: 480px) {
+  #gallery {
+    padding: 60px 15px;
+  }
+
+  #gallery h2 {
+    font-size: 1.5rem;
+  }
+
+  .gallery-grid img {
+    height: 180px;
+  }
+}
+/* ---------- CONTACT SECTION ---------- */
+#contact {
+  background: #fff8f0; /* light cream tone for luxury look */
+  text-align: center;
+  padding: 100px 20px;
+  border-radius: 12px;
+}
+
+#contact h2 {
+  color: #c59d5f;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+#contact p {
+  color: #444;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.contact-btn {
+  background: #c59d5f;
+  color: #fff;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 12px rgba(197, 157, 95, 0.4);
+}
+
+.contact-btn:hover {
+  background: #b68a4d;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(197, 157, 95, 0.5);
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+
+/* Tablet */
+@media (max-width: 992px) {
+  #contact {
+    padding: 80px 25px;
+  }
+
+  #contact h2 {
+    font-size: 1.8rem;
+  }
+
+  #contact p {
+    font-size: 1rem;
+  }
+
+  .contact-btn {
+    font-size: 0.95rem;
+    padding: 10px 22px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  #contact {
+    padding: 70px 20px;
+  }
+
+  #contact h2 {
+    font-size: 1.6rem;
+  }
+
+  #contact p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .contact-btn {
+    width: 80%;
+    max-width: 300px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  #contact {
+    padding: 60px 15px;
+  }
+
+  #contact h2 {
+    font-size: 1.4rem;
+  }
+
+  #contact p {
+    font-size: 0.9rem;
+  }
+
+  .contact-btn {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+}
+
